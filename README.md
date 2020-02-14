@@ -29,14 +29,22 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+The DOM is a bridge between our HTML, CSS and Javascript and the browser. The DOM executes the HTML, CSS and Javascript in the browser for us. It also allows us to have dynamic interactions on our web page like event listeners. 
 
 2. What is an event?
 
+DOM Events are sent to notify code of interesting things that have taken place. Each event is represented by an object which is based on the Event interface, and may have additional custom fields and/or functions used to get additional information about what happened. Events can represent everything from basic user interactions to automated notifications of things happening in the rendering model.
+An event is something that happens on the user side within the DOM so our users who visit our website can interact with our site. An example of this is clicking on a picture and it changing or filling out a form. We used a few different events this week in our assignment. I, particularly, used ‘click’, ‘dblclick’, ‘mouseover’, ‘mouseleave’
+
+
 3. What is an event listener?
+The addEventListener() is an inbuilt function in Javascript which takes the event to listen for, and a second argument to be called whenever the described event (like ‘click’) gets fired. Any number of event handlers can be added to a single element without overwriting existing event handlers. 
 
 4. Why would we convert a NodeList into an Array?
+A Nodelist is not a Javascript API. It’s actually a browser API. So things like querySelectorAll() and getElementsByTagName() aren’t Javascript methods, they’re browser APIs that let you access DOM elements. You can then manipulate them with Javascript. Because the Nodelist is not JS we can’t use ES6 array methods like Array.forEach(), Array.every(), Array.some(), Array.filter() on them. So in order to be able to use these they must be converted to an array which we do with Array.from() 
 
 5. What is a component?
+A component is a small, potentially re-usable set of logic, behaviors and interface elements (UI or API). A function that is written to be reused. A dynamic website is usually written with components like buttons and blog posts. It also allows us to execute only certain lines of code at a time if we want to like adding events and event listeners to different parts of the site. 
 
 ### Git Set up
 
